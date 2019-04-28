@@ -1,0 +1,14 @@
+.jumbotron {
+  position:relative;
+}
+
+#github {
+  position: absolute; 
+  top: 5px; 
+  left: 5px;
+}
+
+.fakeimg {
+  height: 200px;
+  background: #aaa;
+}
