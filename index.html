@@ -21,7 +21,7 @@
 </div>
 
 <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
-  <a class="navbar-brand" href="#">Navbar</a>
+  <a class="navbar-brand" href="#">About</a>
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
     <span class="navbar-toggler-icon"></span>
   </button>
@@ -41,42 +41,36 @@
 </nav>
 
 <div class="container" style="margin-top:30px">
+  <h2>About Lesskeys</h2>
+  <p>LessKeys is a multi-lock system aimed at apartment buildings. The project was started by three students during research for their bachelor thesis at the University of Innsbruck.<br/>
+    It's aimed to be a basic and simple implementation of a smart-lock system, designed for multi-apartment buildings with respect to the privacy and security aspects that come with such a use-case. The goal of the project is to provide a basic pattern for developing such a system.<br/>
+    During development the focus was on user privacy and the usage of the "Near Field Communication" standard (NFC).<br/>
+    The project itself is devided into four essential components. Those are the android app, the server application, the lock software and the web-app. 
+</p>
+</div>
+
+<div class="container" style="margin-top: 30px">
   <div class="row">
-    <div class="col-sm-4">
-      <h2>About Me</h2>
-      <h5>Photo of me:</h5>
-      <div class="fakeimg">Fake Image</div>
-      <p>Some text about me in culpa qui officia deserunt mollit anim..</p>
-      <h3>Some Links</h3>
-      <p>Lorem ipsum dolor sit ame.</p>
-      <ul class="nav nav-pills flex-column">
-        <li class="nav-item">
-          <a class="nav-link active" href="#">Active</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">Link</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">Link</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link disabled" href="#">Disabled</a>
-        </li>
-      </ul>
-      <hr class="d-sm-none">
+    <div class="col-sm-3">
+      <h3>Server</h3>
+      <p>An application designed as a communication point between the different tiers, while also functioning as the central data storage in combination with a SQL-based db.<br\>
+      </p>
     </div>
-    <div class="col-sm-8">
-      <h2>TITLE HEADING</h2>
-      <h5>Title description, Dec 7, 2017</h5>
-      <div class="fakeimg">Fake Image</div>
-      <p>Some text..</p>
-      <p>Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
-      <br>
-      <h2>TITLE HEADING</h2>
-      <h5>Title description, Sep 2, 2017</h5>
-      <div class="fakeimg">Fake Image</div>
-      <p>Some text..</p>
-      <p>Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
+    <div class="col-sm-3">
+      <h3>App</h3>
+      <p>The application serves as the central control element of the system for appartment owners, property managers and tenants. <br />
+        The most important functionalities of the LessKeys app are the interaction with NFC chips, the key function of the smartphone and authorization management and lock control.<br />
+      </p>
+    </div>
+    <div class="col-sm-3">
+      <h3>Lock</h3>
+      <p>A program suited to run on a Raspberry Pi with special Modules, like a PN532 NFC reader, etc.<br/>
+        Together with a 5V relais, the SoC can function as a controller for an electric door lock.
+      </p>
+    </div>
+    <div class="col-sm-3">
+      <h3>Webapp</h3>
+      
     </div>
   </div>
 </div>
