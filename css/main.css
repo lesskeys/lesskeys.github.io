@@ -14,3 +14,13 @@
   height: 200px;
   background: #aaa;
 }
+
+section {
+  display: flow;
+  background: lightgrey;
+}
+
+.section-container{
+  margin-bottom: 0px;
+  margin-top: 0px;
+}
