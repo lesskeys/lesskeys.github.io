@@ -38,9 +38,19 @@ section {
 }
 
 .section-text{
-  padding-top: 90px;
+  padding-top: 110px;
 }
 
 p{
   font-size: large;
+}
+
+#phone{
+  padding-top: 20px;
+}
+
+@media (max-width:800px) {
+  img#phone {
+    display: none;
+  }
 }
