@@ -18,6 +18,7 @@
 section {
   display: flow;
   background: lightgrey;
+  padding-bottom: 70px;
 }
 
 .section-container{
@@ -38,7 +39,8 @@ section {
 }
 
 .section-text{
-  padding-top: 110px;
+  padding-top: 20%;
+  padding-bottom: 20%;
 }
 
 p{
@@ -51,6 +53,10 @@ p{
 
 @media (max-width:800px) {
   img#phone {
+    display: none;
+  }
+
+  img#processor{
     display: none;
   }
 }
