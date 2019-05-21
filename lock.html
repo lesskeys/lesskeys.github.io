@@ -37,10 +37,83 @@
     </div>
 </nav>
 
-<div class="container" style="margin-top:30px">
-    <h2>Lesskeys-Lock</h2>
-    <h1>under construction...</h1>
-    <img id="construction" class="img-responsive" src="res/construction.png" width="70%"/>
+<div class="section-container">
+    <section style="background-color: white">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+
+                </div>
+                <div class="col-md-8">
+                    <div class="section-text">
+                        <h2>Lock System</h2>
+                        <p>
+                            The lock system serves as the central control element for the procedure of unlocking a door.
+                            It is best compared to a conventional door lock. Though a major difference are the keys which have authorisations for corresponding doors.
+                            As result a key can on one hand be authorised for several doors, but on the other hand, a door can also be unlocked by many different keys.
+                            Such a key is represented as a unique amount of data that is transferred to the lock system via NFC either from a smartphone, or a NFC-chip.
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+</div>
+
+<div class="section-container">
+    <section style="background-color: white">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="section-text">
+                        <h3>Hardware-Components</h3>
+                        <ul>
+                            <li>Raspberry Pi single-board computer, responsible for controlling the other hardware-components</li>
+                            <li>NFC-Reader, controlling the NFC-communication between lock and smartphone or NFC-Chip </li>
+                            <li>LCD display for user feedback</li>
+                            <li>5V relay to control the electronic door lock <br>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="section-text">
+                        <h3>Software-components</h3>
+                        <ul>
+                            <li> <a href="http://nfc-tools.org/index.php/Libnfc">Libnfc</a></li>
+                            <li> <a href="https://curl.haxx.se/libcurl/">libcurl</a>  </li>
+                            <li> <a href="https://www.sqlite.org/index.html">SQlite database</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+</div>
+
+<div class="section-container">
+    <section style="background-color: white">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+
+                </div>
+                <div class="col-md-8">
+                    <div class="section-text">
+                        <h3>Features</h3>
+                        <ul>
+                            <li>Unlocking a door via NFC with the Keyless-App</li>
+                            <li>Unlocking a door via NFC with a NFC-chip </li>
+                            <li>Remote unlocking a door from a long distance (for example from your workplace)  </li>
+                        </ul>
+
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
 </div>
 
 </body>
