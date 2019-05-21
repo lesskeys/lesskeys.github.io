@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Lesskeys-App</title>
+    <title>Lesskeys-Server</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
     <link rel="stylesheet" href="css/main.css">
@@ -38,9 +38,96 @@
 </nav>
 
 <div class="container" style="margin-top:30px">
-    <h2>LessKeys-Server</h2>
-    <h1>under construction...</h1>
-    <img id="construction" class="img-responsive" src="res/construction.png" width="70%"/>
+    <div class="section-container">
+        <section style="background-color: white">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-4">
+
+                    </div>
+                    <div class="col-md-8">
+                        <div class="section-text">
+                            <h2>LessKeys-Server</h2>
+                            <p>
+                                The central component and data storage of the system is the backend, via which all communication of individual system elements takes place.
+                                The server functions as the actual central communication interface of the system.
+                                It is implemented as a REST API and thus provides various services for the individual components.
+                                As usual with REST, HTTP is used here as the communication method. In our special case HTTPS is used to guarantee confidential data traffic.
+                                All data is stored in an SQL-based database.
+                            </p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <div class="section-container">
+        <section style="background-color: white">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-4">
+
+                    </div>
+                    <div class="col-md-8">
+                        <div class="section-text">
+                            <h3>Technical Part</h3>
+                            <p>
+                                The server application was implemented in Java using the Spring Framework.
+                                The SQL-based database, more precisely a MySQL database, is controlled by the Java Persistance API (JPA).
+                                In this database all data of the system are stored.
+                                As webserver we use Apache Tomcat, because we need an ApplicationServer that allows us to host Java Servlets.
+                                Apache Maven is used for build and dependency management.
+                            </p>
+                            <h4> Linklist:</h4>
+                            <ul>
+                                <li><a href="https://spring.io/">Spring Framework</a></li>
+                                <li><a href="https://www.mysql.com/">MySQL</a></li>
+                                <li><a href="http://tomcat.apache.org/">Tomcat</a></li>
+                                <li><a href="https://maven.apache.org/"> Maven</a></li>
+                            </ul>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <div class="section-container">
+        <section style="background-color: white">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-4">
+
+                    </div>
+                    <div class="col-md-8">
+                        <div class="section-text">
+                            <h3>Running the Serversoftware:</h3>
+                                <ol>
+                                    <li>Install the Maven build tool.</li>
+                                    <li>Make sure you have a MySQL user called admin with password admin.</li>
+                                    <li>Then, setup an empty database called keyless. (If you cannot setup a db like that, then you would have to configure that in the file src/main/ressources/application.properties.)</li>
+                                    <li>Navigate to the root directory and run:<br>
+                                        <code>
+                                            mvn clean<br>
+                                            mvn spring-boot:run
+                                        </code>
+                                    </li>
+                                </ol>
+                            <p>
+                                Link to GitHub-Repository: <a href="https://github.com/lesskeys/lesskeys-server">LessKeys-Server</a>
+                            </p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+    </div>
+
+
 </div>
 
 </body>
