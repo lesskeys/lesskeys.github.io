@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>System Architecture</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/main.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+</head>
+<body>
+
+<div class="jumbotron text-center" style="margin-bottom:0">
+    <div id="github">
+        <a href="http://github.com/lesskeys"><image src="res/GitHub-Mark-64px.png" style="max-width:100%"></image></a>
+    </div>
+    <h1>Lesskeys</h1>
+    <p>a simple approach on building a smart-lock system</p>
+</div>
+
+<nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+    <a class="navbar-brand" href="index.html">About</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="collapsibleNavbar">
+        <ul class="navbar-nav">
+            <li class="nav-item">
+                <a class="nav-link" href="server.html">Server</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="lock.html">Lock</a>
+            </li>
+        </ul>
+    </div>
+</nav>
+
+<div class="section-container">
+    <section style="background-color: white">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-8">
+                    <div class="section-text">
+                        <h2>System Architecture</h2>
+                        <p>
+                            This section is intended to give a brief insight into the architecture of the entire system.
+                            On the whole, the system consists of the following three big components: <br/>
+                            <ul>
+                                <li>Backend</li>
+                                <li>Android Application</li>
+                                <li>Locking System</li>
+                            </ul>
+                        </p>
+                        <h4>Simplified Architecture:</h4>
+                            <p>
+                                In the simplified representation of the system the 3 basic components can be seen.
+                                The blue arrows indicate communication via NFC.
+                                The other arrows represent communication between the individual components and the server via the Internet.
+                                The communication is based on HTTPS. During communication between server and Raspberry or server and app, system-specific data is exchanged.<br>
+                                With the Android application a new chip can be written and read.
+                                When the chip is written, a new authorization for the respective lock is created.
+                                Reading the chip serves to determine the owner of a key.
+                                <img id="system_simp" class="img-responsive" src="res/system_simp.png" width="80%" style="padding-top: 5%;"/>
+                            </p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section style="background-color: white">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-8">
+                    <div class="section-text">
+                        <h4>Advanced Architecture:</h4>
+                        <p>
+                            The picture of the advanced Architecture gives a more specific insight into the architecture of the LessKeys System.
+                            <h5>more to come..</h5>
+                            <img id="system_ad" class="img-responsive" src="res/system_advanced.jpg" width="80%" style="padding-top: 5%;"/>
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+</div>
+
+</body>
+</html>
