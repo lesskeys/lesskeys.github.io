@@ -59,6 +59,13 @@ p{
   img#processor{
     display: none;
   }
+
+  img#webapp{
+    display: none;
+  }
+  img#server{
+    display: none;
+  }
 }
 
 .footer-nav{
