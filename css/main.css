@@ -71,3 +71,11 @@ p{
   text-decoration: none;
   font-size: small;
 }
+
+.progress{
+  background-color: lightgrey;
+  width: 30%;
+  height:15%;
+  padding-top: 15px;
+  font-size: large;
+}
