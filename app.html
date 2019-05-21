@@ -143,7 +143,11 @@
                         <p>
                             Taplinx was developed by Dutch semiconductor manufacturer NXP-Semiconductors.
                             It simplifies working with NFC chips in connection with app development in Android by providing predefined methods.
-                            These include writing and reading the NFC chips as well as encryption of the chips.
+                            These include writing and reading the NFC chips as well as encryption of the chips.<br>
+                            Since we use the MIFARE DESFire chips produced by NXP as the keys for our system, we can easily use the TapLinx SDK.
+                            Otherwise, we would have to implement every process ourselves.
+                            This would include the authentication, description and the encryption using AES.<br>
+                            An SDK key is required to use the technology. After successfully generating a key, the developer has access to all functionalities of TapLinx.<br>
 
                             Link to TapLinx: <a href="https://www.mifare.net/en/products/tools/taplinx/">https://www.mifare.net/en/products/tools/taplinx</a>
                         </p>
@@ -157,6 +161,41 @@
         </div>
     </section>
 </div>
+
+
+
+
+<div class="section-container">
+    <section style="background-color: white">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-8">
+                    <div class="section-text">
+                        <h4>Firebase</h4>
+                        <p>
+                            We use Firebase to receive and display push notifications from the server.
+                            To be more precise, the cloud messaging feature is in use.
+                            This is the standardized way to send push notifications to an Android application.
+                            This allows the backend to communicate directly with the app on a user's smartphone.
+                        </p>
+                        <p>
+                            When a user of the system logs in with his access data, the Android application registers at the Firebase service and gets a identification number.
+                            This number is sent to the backend by the application .
+                            As soon as the backend wants to send a message to the App, the data is transferred to the FCM server.
+                            Using the identification number, a message can be sent then to a specific user.<br>
+                            Link to Firebase Cloud Messaging: <a href="https://firebase.google.com/docs/cloud-messaging">https://firebase.google.com/docs/cloud-messaging</a>
+                        </p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <a href="https://firebase.google.com/"><image src="res/firebase_logo.png" style="max-width:100%;margin-top: 35%;"></image></a>
+                </div>
+
+            </div>
+        </div>
+    </section>
+</div>
+
 
 
 </div>
