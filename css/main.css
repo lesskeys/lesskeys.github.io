@@ -60,3 +60,14 @@ p{
     display: none;
   }
 }
+
+.footer-nav{
+  float: inherit;
+}
+
+.footer-nav-item{
+  margin-left:20px;
+  color: #6c6c6c;
+  text-decoration: none;
+  font-size: small;
+}
