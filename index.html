@@ -16,7 +16,7 @@
   <div id="github">
     <a href="https://github.com/lesskeys"><img width="149" height="149" src="https://aral.github.io/fork-me-on-github-retina-ribbons/left-orange@2x.png" class="attachment-full size-full" alt="View on GitHub" data-recalc-dims="1"></a>
   </div>
-  <h1 style="color: white">Lesskeys</h1>
+  <h1 style="color: white">LessKeys</h1>
   <p style="color:white;">a simple approach on building a smart-lock system</p>
 </div>
 
@@ -51,19 +51,20 @@
         </div>
         <div class="col-md-9">
           <center>
-          <p align="left">This website is in progress</p>
+          <p align="left">This website is currently work in progress!</p>
           </center>
         </div>
       </div>
 
 
     </div>
-    <h2>About Lesskeys</h2>
+    <h2>About LessKeys</h2>
 
-      <p>LessKeys is a multi-lock system aimed at apartment buildings. The project was started by three students during research for their bachelor thesis at the University of Innsbruck.
-        It's aimed to be a basic and simple implementation of a smart-lock system, designed for multi-apartment buildings with respect to the privacy and security aspects that come with such a use-case.<br> The goal of the project is to provide a basic pattern for developing such a system.<br/>
-        During development the focus was on user privacy and the usage of the "Near Field Communication" standard (NFC).
-        The project itself is devided into four essential components. Those are the android app, the server application, the lock software and the web-app.
+      <p>LessKeys is a multi-lock system designed for multi-apartment buildings. 
+        The project was started by three students during research for their bachelor thesis at the University of Innsbruck.<br/>
+        The goal of the project is to provide a basic foundation for developing such a system.<br/>
+        Based on the use-case, development was focused on user-privacy, whilest only using state of the art technology, like the "Near Field Communication" standard (NFC).<br/>
+        The project itself is devided into four essential components: android app, server application, lock software and web-app.<br/>
         <a href="architecture.html">More</a>
       </p>
     <img id="logo" class="img-responsive" src="res/logo.jpg" width="20%"/>
@@ -78,7 +79,7 @@
           <div class="section-text">
             <h3>App</h3>
             <p>The android-app is the central control element of the system for appartment owners, property managers and tenants.<br/>
-              The main functionalities of the LessKeys-App are opening locks, reading and writing NFC chips, authorization management and lock control.<br />
+              The main functionalities of the LessKeys-App are opening locks, reading and writing NFC chips, and lock management.<br />
             </p>
             <a class="btn btn-primary btn-lg" href="app.html">LessKeys-App</a>
           </div>
@@ -107,7 +108,7 @@
                 <div class="col-md-8">
                     <div class="section-text">
                         <h3>Server</h3>
-                        <p>An application designed as a communication point between the different tiers, while also functioning as the central data storage in combination with a SQL-based db.<br>
+                        <p>An application designed as a communication point between the different tiers, while also functioning as the central data storage in combination with a SQL-based database.<br>
                         </p>
                         <a class="btn btn-primary btn-lg" href="server.html">LessKeys-Server</a>
                     </div>
@@ -124,9 +125,9 @@
       <div class="row">
         <div class="col-md-8">
           <div class="section-text">
-            <h3>Lock</h3>
-            <p>A program suited to run on a Raspberry Pi with special Modules, like a PN532 NFC reader, etc.<br/>
-              Together with a 5V relais, the SoC can function as a controller for an electric door lock.
+            <h3>Lock Software</h3>
+            <p>A program suited to run on a Raspberry Pi with special Modules, like a PN532 NFC reader and a basic LCD display.<br/>
+              In combination with a 5V relais, the SoC can function as a controller for an electric door lock.
             </p>
             <a class="btn btn-primary btn-lg" href="lock.html">LessKeys-Lock</a>
           </div>
