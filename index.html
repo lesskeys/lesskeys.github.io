@@ -6,18 +6,20 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
   <link rel="stylesheet" href="css/main.css">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900" rel="stylesheet">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
 </head>
 <body>
 
-<div class="jumbotron text-center" style="margin-bottom:0; background-image: url('res/main4.jpg'); background-size: 100% 100%; ">
+<div class="jumbotron text-center" style="margin-bottom:0; background-image: url('res/main4.jpg'); background-size: cover; ">
   <div id="github">
     <a href="https://github.com/lesskeys"><img width="149" height="149" src="https://aral.github.io/fork-me-on-github-retina-ribbons/left-orange@2x.png" class="attachment-full size-full" alt="View on GitHub" data-recalc-dims="1"></a>
   </div>
   <h1 style="color: white">LessKeys</h1>
-  <p style="color:white;">a simple approach on building a smart-lock system</p>
+  <p style="color:#003362; font-size: large; font-style: oblique">a simple approach on building a smart-lock system</p>
 </div>
 
 <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
@@ -39,131 +41,107 @@
     </ul>
   </div>  
 </nav>
-
-<div class="container" style="margin-top:30px; margin-bottom: 30px;">
-  <center>
-    <div class="progress">
-      <div class="row">
-        <div class="col-md-3">
-          <center>
-          <img src="res/gear.png" width="35%" height="auto"/>
-          </center>
-        </div>
-        <div class="col-md-9">
-          <center>
-          <p align="left">This website is currently work in progress!</p>
-          </center>
-        </div>
-      </div>
-
-
-    </div>
-    <h2>About LessKeys</h2>
-
-      <p>LessKeys is a multi-lock system designed for multi-apartment buildings. 
-        The project was started by three students during research for their bachelor thesis at the University of Innsbruck.<br/>
-        The goal of the project is to provide a basic foundation for developing such a system.<br/>
-        Based on the use-case, development was focused on user-privacy, whilest only using state of the art technology, like the "Near Field Communication" standard (NFC).<br/>
-        The project itself is devided into four essential components: android app, server application, lock software and web-app.<br/>
-        <a href="architecture.html">More</a>
-      </p>
-    <img id="logo" class="img-responsive" src="res/logo.jpg" width="20%"/>
-  </center>
-</div>
-
-<div class="section-container">
-  <section>
+<div class="wrapper">
+  <section class="our_activity" >
     <div class="container">
       <div class="row">
-        <div class="col-md-8">
-          <div class="section-text">
-            <h3>App</h3>
-            <p>The android-app is the central control element of the system for appartment owners, property managers and tenants.<br/>
-              The main functionalities of the LessKeys-App are opening locks, reading and writing NFC chips, and lock management.<br />
-            </p>
-            <a class="btn btn-primary btn-lg" href="app.html">LessKeys-App</a>
+        <div class="col-md-12 col-xs-12">
+          <div class="single-Promo">
+                  <center>
+                  <h3>ABOUT</h3>
+                    <br>
+                  <p>LessKeys is a multi-lock system designed for multi-apartment buildings.
+                  The project was started by three students during research for their bachelor thesis at the University of Innsbruck.<br/>
+                  The goal of the project is to provide a basic foundation for developing such a system.<br/>
+                  Based on the use-case, development was focused on user-privacy, whilest only using state of the art technology, like the "Near Field Communication" standard (NFC).<br/>
+                  The project itself is devided into four essential components: android app, server application, lock software and web-app.<br/>
+
+                  </p>
+                    <a class="btn btn-primary btn-lg" href="architecture.html">LEARN MORE</a>
+                    <br>
+                  </center>
           </div>
-        </div>
-        <div class="col-md-4">
-          <p>
-            <img id="phone" class="img-responsive" src="res/smartphone_lesskeys.png" width="70%" style="padding-top: 10%; padding-bottom: 10%"/>
-          </p>
         </div>
       </div>
     </div>
   </section>
-</div>
+
+<section class="our_activity" style="background-color: #e0e0e0; padding-top: 20px; padding-bottom: 5%">
+  <h2>OUR THREE COMPONENTS</h2>
+  <p>The system consists of 3 main components, which are connected to each other via the Internet </p>
+  <div class="container">
+    <div class="row">
+      <div class="col-md-4 col-xs-12">
+        <div class="single-Promo">
+          <div class="promo-icon">
+            <i class="material-icons">phone_android</i>
+          </div>
+          <center>
+          <h3>APP</h3>
+          </center>
+          <p>The android-app is the central control element of the system for appartment owners, property managers and tenants.<br/>
+            The main functionalities of the LessKeys-App are opening locks, reading and writing NFC chips, and lock management.<br />
+          </p>
+          <a class="btn btn-primary btn-lg" href="app.html">APP</a>
+        </div>
+      </div>
+      <div class="col-md-4 col-xs-12">
+        <div class="single-Promo">
+          <div class="promo-icon">
+            <i class="material-icons">data_usage</i>
+          </div>
+          <center>
+          <h3>SERVER</h3>
+          </center>
+          <p>An application designed as a communication point between the different tiers, while also functioning as the central data storage in combination with a SQL-based database.<br>
+          </p>
+          <a class="btn btn-primary btn-lg" href="server.html">SERVER</a>
+        </div>
+      </div>
+      <div class="col-md-4 col-xs-12">
+        <div class="single-Promo">
+          <div class="promo-icon">
+            <i class="material-icons">lock_outline</i>
+          </div>
+          <center>
+          <h3>Lock Software</h3>
+          </center>
+          <p>A program suited to run on a Raspberry Pi with special Modules, like a PN532 NFC reader and a basic LCD display.<br/>
+            In combination with a 5V relais, the SoC can function as a controller for an electric door lock.
+          </p>
+          <a class="btn btn-primary btn-lg" href="lock.html">LOCK</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
 
 
 
-<div class="section-container">
-    <section style="background-color: white">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-4">
-                    <p>
-                        <img id="server" class="img-responsive" src="res/server.png" width="50%" style="padding-top: 20%; padding-bottom: 10%"/>
-                    </p>
-                </div>
-                <div class="col-md-8">
-                    <div class="section-text">
-                        <h3>Server</h3>
-                        <p>An application designed as a communication point between the different tiers, while also functioning as the central data storage in combination with a SQL-based database.<br>
-                        </p>
-                        <a class="btn btn-primary btn-lg" href="server.html">LessKeys-Server</a>
-                    </div>
-                </div>
-
+  <section class="our_activity">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12 col-xs-12">
+          <div class="single-Promo">
+            <div class="promo-icon">
+              <i class="material-icons">computer</i>
             </div>
-        </div>
-    </section>
-</div>
-
-<div class="section-container">
-  <section>
-    <div class="container">
-      <div class="row">
-        <div class="col-md-8">
-          <div class="section-text">
-            <h3>Lock Software</h3>
-            <p>A program suited to run on a Raspberry Pi with special Modules, like a PN532 NFC reader and a basic LCD display.<br/>
-              In combination with a 5V relais, the SoC can function as a controller for an electric door lock.
-            </p>
-            <a class="btn btn-primary btn-lg" href="lock.html">LessKeys-Lock</a>
-          </div>
-        </div>
-        <div class="col-md-4">
-          <p>
-            <img id="processor" class="img-responsive" src="res/processor3.png" width="100%"  style="padding-top: 30%; padding-bottom: 30%"/>
-          </p>
-        </div>
-      </div>
-    </div>
-  </section>
-</div>
-
-<div class="section-container">
-  <section style="background-color: white">
-    <div class="container">
-      <div class="row">
-        <div class="col-md-4">
-          <p>
-            <img id="webapp" class="img-responsive" src="res/webapp.png" width="80%" style="padding-top: 50%; padding-bottom: 30%"/>
-          </p>
-        </div>
-        <div class="col-md-8">
-          <div class="section-text">
-            <h3>Webapp</h3>
+            <center>
+            <h3>WebAPP</h3>
+            </center>
             <p>
-              A simple way for admins to do basic configuration and extensive log inspections.<br/>
+              We have developed a web application for configuration and basic control of the server software.
+              It also uses the REST interface. An administrator can also view the system log via the Web app.
+              In addition, it has a function that enables ringing at the main entrance door.<br/>
             </p>
-            <a class="btn btn-primary btn-lg" href="webapp.html">LessKeys-Webapp</a>
+            <a class="btn btn-primary btn-lg" href="webapp.html">WEBAPP</a>
+            </p>
           </div>
         </div>
-
       </div>
     </div>
   </section>
+
 </div>
 
 
