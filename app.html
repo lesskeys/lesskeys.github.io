@@ -12,12 +12,12 @@
 </head>
 <body>
 
-<div class="jumbotron text-center" style="margin-bottom:0">
+<div class="jumbotron text-center" style="margin-bottom:0;background-color: #003362">
     <div id="github">
-        <a href="http://github.com/lesskeys"><image src="res/GitHub-Mark-64px.png" style="max-width:100%"></image></a>
+        <a href="https://github.com/lesskeys"><img width="149" height="149" src="https://aral.github.io/fork-me-on-github-retina-ribbons/left-orange@2x.png" class="attachment-full size-full" alt="View on GitHub" data-recalc-dims="1"></a>
     </div>
-    <h1>Lesskeys</h1>
-    <p>a simple approach on building a smart-lock system</p>
+    <h1 style="color: #ffffff">LessKeys</h1>
+    <p style="color:#ffffff; font-size: large; font-style: oblique">a simple approach on building a smart-lock system</p>
 </div>
 
 <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
@@ -37,23 +37,26 @@
     </div>
 </nav>
 
-<div class="section-container">
-    <section style="background-color: #dddddd">
-        <div class="container">
+
+<div class="container" style="margin-top:30px">
+
+    <section class="our_activity">
+        <div class="container" style="background-color: #F5F5F5">
+            <center>
+                <h2 style="padding-top: 5%; color: #003362">LessKeys-App</h2>
+            </center>
             <div class="row">
-                <div class="col-md-4">
-                    <p>
-                        <img id="phone" class="img-responsive" src="res/smartphone_lesskeys.png" width="50%" style="margin-top: 35%"/>
-                    </p>
-                </div>
-                <div class="col-md-8">
-                    <div class="section-text">
-                        <h2>LessKeys-App</h2>
-                        <p>
+
+                <div class="col-md-12 col-xs-12">
+                    <div class="single-Promo"  style="background-color: #E8E8E8" >
+                        <h4 style="color: #003362">Info</h4>
+                        <img align="left" id="webapp" class="img-responsive" src="res/smartphone_lesskeys.png" width="20%" style="padding-top: 1%; padding-right: 2%"/>
+                        <p style="padding-top: 2%;">
                             The Android application serves as the central control element of the system for apartment owners, property managers and tenants.
                             After installation on the user's mobile phone, he/she must log in with the given access data.<br/>
                         </p>
-                        <p>
+                        <br/>
+                        <p style="padding-bottom: 10%">
                             The app was developed in Java for Smarthphones with an Android operating system. The communication with the server takes place via REST.
                             An important point is the implementation of NFC.
                             A distinction is made between the HCE mode, for communication between NFC reader and smartphone, and the NFC interface for writing the chips.
@@ -61,87 +64,81 @@
                     </div>
                 </div>
 
-            </div>
-        </div>
-    </section>
-</div>
-
-<div class="section-container">
-    <section style="background-color: white">
-        <div class="container">
-                    <div class="section-text">
-                        <h4>The most important functionalities of the LessKeys app include:</h4>
+                <div class="col-md-12 col-xs-12">
+                    <div class="single-Promo"  style="background-color: #E8E8E8">
+                        <h4 style="color: #003362">Functionalities</h4>
+                        <h5>The most important functionalities of the LessKeys app include:</h5>
                         <p>
-                            <ul>
-                                <li>Interaction with NFC chips </li>
-                                <li>Key function of the telephone </li>
-                                <li>authorization management </li>
-                                <li>lock control</li>
-                            </ul>
+                        <ul>
+                            <li>Interaction with NFC chips </li>
+                            <li>Key function of the telephone </li>
+                            <li>authorization management </li>
+                            <li>lock control</li>
+                        </ul>
                         <br>
-                        <center>
-                            <p>The interaction with NFC chips is about being able to describe and read the chips.
-                                The writing of the chips is used to create new keys.
-                                The purpose of reading the chips is to read in a foreign key found in the residential complex and thus to determine its owner.
-                            </p>
-                            <p>
-                                The key function of the smartphone is to use the phone as the key for the lock system.
-                                The smartphone emulates an NFC chip using HCE.
-                            </p>
-                            <p>
-                                Authorization management includes viewing, passing on, and editing authorizations for locks in the system.
-                                The aim is to make it as easy as possible for users to view authorizations for their own locks and to pass these authorizations on to other users.
-                            </p>
-                            <p>
-                                Locks should also be able to be accessed via a remote connection.
-                                Via button click, the user can easily open the main gate of the apartment building.
-                            </p>
-                        </center>
+                        <p>The interaction with NFC chips is about being able to describe and read the chips.
+                            The writing of the chips is used to create new keys.
+                            The purpose of reading the chips is to read in a foreign key found in the residential complex and thus to determine its owner.
+                        </p>
+                        <p>
+                            The key function of the smartphone is to use the phone as the key for the lock system.
+                            The smartphone emulates an NFC chip using HCE.
+                        </p>
+                        <p>
+                            Authorization management includes viewing, passing on, and editing authorizations for locks in the system.
+                            The aim is to make it as easy as possible for users to view authorizations for their own locks and to pass these authorizations on to other users.
+                        </p>
+                        <p>
+                            Locks should also be able to be accessed via a remote connection.
+                            Via button click, the user can easily open the main gate of the apartment building.
                         </p>
                     </div>
+                </div>
 
-        </div>
-    </section>
-</div>
-
-<div class="section-container">
-    <section style="background-color: #dddddd">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-8">
-                    <div class="section-text">
-                        <h4>Technical part</h4>
+                <div class="col-md-12 col-xs-12" style="padding-bottom: 5%">
+                    <div class="single-Promo"  style="background-color: #E8E8E8">
+                        <h4 style="color: #003362">Technical part</h4>
                         <p>
                             The Android application is built on Android SDK-Version 26. The minimal SDK-Version is Version 23.
                             We have used several technologies for building our App:<br/>
                         </p>
                         <p>
                         <ul>
-                        <li> <a href="https://developer.android.com/studio">Android SDK </a></li>
-                        <li> <a href="https://gradle.org/">Gradle Build Tool</a>  </li>
-                        <li> <a href="https://www.mifare.net/en/products/tools/taplinx/">TapLinx SDK </a></li>
-                        <li> <a href="https://developer.android.com/guide/topics/connectivity/nfc/hce">Host Card Emulation</a></li>
-                        <li> <a href="https://firebase.google.com/docs/cloud-messaging">Firebase Cloud messaging</a></li>
+                            <li> <a href="https://developer.android.com/studio">Android SDK </a></li>
+                            <li> <a href="https://gradle.org/">Gradle Build Tool</a>  </li>
+                            <li> <a href="https://www.mifare.net/en/products/tools/taplinx/">TapLinx SDK </a></li>
+                            <li> <a href="https://developer.android.com/guide/topics/connectivity/nfc/hce">Host Card Emulation</a></li>
+                            <li> <a href="https://firebase.google.com/docs/cloud-messaging">Firebase Cloud messaging</a></li>
                         </ul>
                         </p>
                         <p>Link to GitHub-Repository of the Android-App: <a href="https://github.com/lesskeys/lesskeys-android"> LessKeys-App</a></p>
                     </div>
                 </div>
-                <div class="col-md-4">
+
+                <div class="col-md-12 col-xs-12" style="padding-bottom: 5%">
+                    <div class="single-Promo"  style="background-color: #E8E8E8">
+                        <h4 style="color: #003362">TapLinx</h4>
+                        <p>
+                            The Android application is built on Android SDK-Version 26. The minimal SDK-Version is Version 23.
+                            We have used several technologies for building our App:<br/>
+                        </p>
+                        <p>
+                        <ul>
+                            <li> <a href="https://developer.android.com/studio">Android SDK </a></li>
+                            <li> <a href="https://gradle.org/">Gradle Build Tool</a>  </li>
+                            <li> <a href="https://www.mifare.net/en/products/tools/taplinx/">TapLinx SDK </a></li>
+                            <li> <a href="https://developer.android.com/guide/topics/connectivity/nfc/hce">Host Card Emulation</a></li>
+                            <li> <a href="https://firebase.google.com/docs/cloud-messaging">Firebase Cloud messaging</a></li>
+                        </ul>
+                        </p>
+                        <p>Link to GitHub-Repository of the Android-App: <a href="https://github.com/lesskeys/lesskeys-android"> LessKeys-App</a></p>
+                    </div>
                 </div>
 
-            </div>
-        </div>
-    </section>
-</div>
-
-<div class="section-container">
-    <section style="background-color: white">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-8">
-                    <div class="section-text">
-                        <h4>Taplinx</h4>
+                <div class="col-md-12 col-xs-12" style="padding-bottom: 5%">
+                    <div class="single-Promo"  style="background-color: #E8E8E8">
+                        <h4 style="color: #003362">TapLinx</h4>
+                        <a href="https://www.nxp.com/"><image align="right" src="res/nxp-Logo.png" style="max-width:20%;margin-top: 1%; padding-bottom: 2%; padding-left: 2%"></image></a>
                         <p>
                             Taplinx was developed by Dutch semiconductor manufacturer NXP-Semiconductors.
                             It simplifies working with NFC chips in connection with app development in Android by providing predefined methods.
@@ -155,25 +152,11 @@
                         </p>
                     </div>
                 </div>
-                <div class="col-md-4">
-                    <a href="https://www.mifare.net/en/products/tools/taplinx/"><image src="res/tapLinx_logo.jpg" style="max-width:100%;margin-top: 35%;"></image></a>
-                </div>
 
-            </div>
-        </div>
-    </section>
-</div>
-
-
-
-
-<div class="section-container">
-    <section style="background-color: #dddddd">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-8">
-                    <div class="section-text">
-                        <h4>Firebase</h4>
+                <div class="col-md-12 col-xs-12" style="padding-bottom: 5%">
+                    <div class="single-Promo"  style="background-color: #E8E8E8">
+                        <h4 style="color: #003362">Firebase</h4>
+                        <a href="https://firebase.google.com/"><image align="right" src="res/firebase_logo.png" style="max-width:20%;margin-top: 1%;"></image></a>
                         <p>
                             We use Firebase to receive and display push notifications from the server.
                             To be more precise, the cloud messaging feature is in use.
@@ -187,18 +170,14 @@
                             Using the identification number, a message can be sent then to a specific user.<br>
                             Link to Firebase Cloud Messaging: <a href="https://firebase.google.com/docs/cloud-messaging">https://firebase.google.com/docs/cloud-messaging</a>
                         </p>
+
+
                     </div>
                 </div>
-                <div class="col-md-4">
-                    <a href="https://firebase.google.com/"><image src="res/firebase_logo.png" style="max-width:100%;margin-top: 35%;"></image></a>
-                </div>
-
             </div>
         </div>
     </section>
 </div>
-
-
 
 </div>
 
