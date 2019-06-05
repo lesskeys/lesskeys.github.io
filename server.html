@@ -37,95 +37,55 @@
     </div>
 </nav>
 
-<div class="section-container">
-        <section style="background-color: white">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-4">
+<div class="container" style="margin-top:30px">
 
-                    </div>
-                    <div class="col-md-8">
-                        <div class="section-text">
-                            <h2>LessKeys-Server</h2>
-                            <p>
-                                The central component and data storage of the system is the backend, via which all communication of individual system elements takes place.
-                                The server functions as the actual central communication interface of the system.
-                                It is implemented as a REST API and thus provides various services for the individual components.
-                                As usual with REST, HTTP is used here as the communication method. In our special case HTTPS is used to guarantee confidential data traffic.
-                                All data is stored in an SQL-based database.
-                            </p>
-                        </div>
-                    </div>
+    <section class="our_activity">
+        <div class="container" style="background-color: #F5F5F5">
+            <center>
+                <h2 style="padding-top: 5%; color: #003362">LessKeys-Server</h2>
+            </center>
+            <div class="row">
 
+                <div class="col-md-12 col-xs-12">
+                    <div class="single-Promo"  style="background-color: #E8E8E8" >
+                        <h4 style="color: #003362">Info</h4>
+                        <img align="left" id="webapp" class="img-responsive" src="res/server.png" width="11%" style="padding-top: 1%; padding-right: 2%"/>
+                        <p>
+                            The central component and data storage of the system is the backend, via which all communication of individual system elements takes place.
+                            The server functions as the actual central communication interface of the system.<br>
+                            It is implemented as a REST API and thus provides various services for the individual components.
+                            As usual with REST, HTTP is used here as the communication method. In our special case HTTPS is used to guarantee confidential data traffic.
+                            All data is stored in an SQL-based database.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="col-md-12 col-xs-12" style="padding-bottom: 5%">
+                    <div class="single-Promo"  style="background-color: #E8E8E8">
+                        <h4 style="color: #003362">Technical part</h4>
+                        <p>
+                            The server application was implemented in Java using the Spring Framework.
+                            The SQL-based database, more precisely a MySQL database, is controlled by the Java Persistance API (JPA).
+                            In this database all data of the system are stored.
+                            As webserver we use Apache Tomcat, because we need an ApplicationServer that allows us to host Java Servlets.
+                            Apache Maven is used for build and dependency management.
+                        </p>
+                        <p>
+                        <ul>
+                            <li><a href="https://spring.io/">Spring Framework</a></li>
+                            <li><a href="https://www.mysql.com/">MySQL</a></li>
+                            <li><a href="http://tomcat.apache.org/">Tomcat</a></li>
+                            <li><a href="https://maven.apache.org/"> Maven</a></li>
+                        </ul>
+                        </p>
+                        <p>Link to GitHub-Repository of the Server-Software: <a href="https://github.com/lesskeys/lesskeys-server"> LessKeys-Server</a></p>
+                    </div>
                 </div>
             </div>
-        </section>
-    </div>
-
-    <div class="section-container">
-        <section style="background-color: #dddddd">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-4">
-
-                    </div>
-                    <div class="col-md-8">
-                        <div class="section-text">
-                            <h3>Technical Part</h3>
-                            <p>
-                                The server application was implemented in Java using the Spring Framework.
-                                The SQL-based database, more precisely a MySQL database, is controlled by the Java Persistance API (JPA).
-                                In this database all data of the system are stored.
-                                As webserver we use Apache Tomcat, because we need an ApplicationServer that allows us to host Java Servlets.
-                                Apache Maven is used for build and dependency management.
-                            </p>
-                            <h4> Linklist:</h4>
-                            <ul>
-                                <li><a href="https://spring.io/">Spring Framework</a></li>
-                                <li><a href="https://www.mysql.com/">MySQL</a></li>
-                                <li><a href="http://tomcat.apache.org/">Tomcat</a></li>
-                                <li><a href="https://maven.apache.org/"> Maven</a></li>
-                            </ul>
-                        </div>
-                    </div>
-
-                </div>
-            </div>
-        </section>
-    </div>
-
-    <div class="section-container">
-        <section style="background-color: white">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-4">
-
-                    </div>
-                    <div class="col-md-8">
-                        <div class="section-text">
-                            <h3>Running the Serversoftware:</h3>
-                                <ol>
-                                    <li>Install the Maven build tool.</li>
-                                    <li>Make sure you have a MySQL user called admin with password admin.</li>
-                                    <li>Then, setup an empty database called keyless. (If you cannot setup a db like that, then you would have to configure that in the file src/main/ressources/application.properties.)</li>
-                                    <li>Navigate to the root directory and run:<br>
-                                        <code>
-                                            mvn clean<br>
-                                            mvn spring-boot:run
-                                        </code>
-                                    </li>
-                                </ol>
-                            <p>
-                                Link to GitHub-Repository: <a href="https://github.com/lesskeys/lesskeys-server">LessKeys-Server</a>
-                            </p>
-                        </div>
-                    </div>
-
-                </div>
-            </div>
-        </section>
-    </div>
+        </div>
+    </section>
 </div>
+
 
 <div class="jumbotron text-center" style="margin-bottom:0;">
     <div>
