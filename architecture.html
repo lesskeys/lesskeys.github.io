@@ -37,57 +37,97 @@
     </div>
 </nav>
 
-<div class="section-container">
-    <section style="background-color: white">
-        <div class="container">
+
+<div class="container" style="margin-top:30px">
+
+    <section class="our_activity">
+        <div class="container" style="background-color: #F5F5F5">
+            <center>
+                <h2 style="padding-top: 5%; color: #003362">About Lesskeys</h2>
+            </center>
             <div class="row">
-                <div class="col-md-8">
-                    <div class="section-text">
-                        <h2>System Architecture</h2>
+                <div class="col-md-12 col-xs-12">
+                    <div class="single-Promo"  style="background-color: #E8E8E8" >
+                        <h4 style="color: #003362">Info</h4>
                         <p>
                             This section is intended to give a brief insight into the architecture of the entire system.
                             On the whole, the system consists of the following three big components: <br/>
-                            <ul>
-                                <li>Backend</li>
-                                <li>Android Application</li>
-                                <li>Locking System</li>
-                            </ul>
+                        <ul>
+                            <li>Backend</li>
+                            <li>Android Application</li>
+                            <li>Locking System</li>
+                        </ul>
                         </p>
-                        <h4>Simplified Architecture:</h4>
-                            <p>
-                                In the simplified representation of the system the 3 basic components can be seen.
-                                The blue arrows indicate communication via NFC.
-                                The other arrows represent communication between the individual components and the server via the Internet.
-                                The communication is based on HTTPS. During communication between server and Raspberry or server and app, system-specific data is exchanged.<br>
-                                With the Android application a new chip can be written and read.
-                                When the chip is written, a new authorization for the respective lock is created.
-                                Reading the chip serves to determine the owner of a key.
+                    </div>
+                </div>
+                <div class="col-md-12 col-xs-12">
+                    <div class="single-Promo"  style="background-color: #E8E8E8">
+                        <h4 style="color: #003362">Simplified Architecture:</h4>
+                        <p>
+                            In the simplified representation of the system the 3 basic components can be seen.
+                            The blue arrows indicate communication via NFC.
+                            The other arrows represent communication between the individual components and the server via the Internet.
+                            The communication is based on HTTPS. During communication between server and Raspberry or server and app, system-specific data is exchanged.<br>
+                            With the Android application a new chip can be written and read.
+                            When the chip is written, a new authorization for the respective lock is created.
+                            Reading the chip serves to determine the owner of a key.
+                            <center>
                                 <img id="system_simp" class="img-responsive" src="res/system_simp.png" width="80%" style="padding-top: 5%;"/>
-                            </p>
+                            </center>
+                        </p>
                     </div>
                 </div>
 
-            </div>
-        </div>
-    </section>
-
-    <section style="background-color: white">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-8">
-                    <div class="section-text">
-                        <h4>Advanced Architecture:</h4>
+                <div class="col-md-12 col-xs-12">
+                    <div class="single-Promo"  style="background-color: #E8E8E8">
+                        <h4 style="color: #003362">Advanced Architecture:</h4>
                         <p>
                             The picture of the advanced Architecture gives a more specific insight into the architecture of the LessKeys System.
-                            <h5>more to come..</h5>
+                        <h5>more to come..</h5>
+                        <center>
                             <img id="system_ad" class="img-responsive" src="res/system_advanced.jpg" width="80%" style="padding-top: 5%;"/>
+                        </center>
                         </p>
+                    </div>
+                </div>
+
+                <div class="col-md-12 col-xs-12" style="padding-bottom: 5%">
+                    <div class="single-Promo"  style="background-color: #E8E8E8">
+                        <h4 style="color: #003362"> Challenges</h4>
+                        <center>
+                            <img id="system_ad" class="img-responsive" src="res/security.png" width="90%" style="padding-top: 5%;"/>
+                        </center><br>
+                        <p>
+                            The main challenges to the security of the system start with the multitenancy.
+                            This means that there are several clients on the same server, i.e. customers or principals,
+                            and that they can operate the system without having mutual access to their data,
+                            user administration and so on.
+                            This also includes the privacy of the individual users.
+                        </p>
+                        <p>
+                            A further important point is the safety of the system against disturbing influences,
+                            or also environmental influences, from outside.
+                            It should not be possible for the attacker to bypass the lock by violent actions.
+                        </p>
+                        <p>
+                            The NFC chip cards used also play an important role.
+                            Chip cards are to be used that guarantee secure data encryption.
+                        </p>
+                        <p>
+                            The connection between the individual components (server, lock, app) must also be secure and therefore not vulnerable.
+                        </p>
+                        <p>
+                            This system has tried to overcome all these security challenges.
+                        </p>
+
                     </div>
                 </div>
 
             </div>
         </div>
     </section>
+
+
 </div>
 
 <div class="jumbotron text-center" style="margin-bottom:0;">
